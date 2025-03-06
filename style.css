@@ -29,18 +29,25 @@ body {
 
 .nav-links li {
     display: inline;
+    border: 2px solid black;
+    padding: 8px;
+    box-shadow: 7px 4px 4px black;
+    cursor: pointer;
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     color: black;
 }
 
+.nav-links li:hover {
+    background-color: black;
+}
+
 .nav-links a:hover {
-    background-color: orange;
-    padding: 20px;
+    color: white;
 }
 
 .menu-toggle {
@@ -55,14 +62,15 @@ body {
         position: absolute;
         top: 70px;
         right: 0;
-        /* width: 200px; */
-        padding: 20px;
-        text-align: right;
+        width: 150px;
+        padding: 5px;
+        text-align: center;
     }
 
-    .nav-links a:hover {
-        background-color: orange;
-        padding: 20px;
+    .nav-links li:hover {
+        background-color: black;
+        padding: 5px;
+        color: white;
     }
 
     .nav-links.show {
@@ -72,4 +80,34 @@ body {
     .menu-toggle {
         display: block;
     }
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(images/vallejo-sauce.jpg) center/cover no-repeat;
+}
+
+
+/* About Section */
+
+.about-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6E3C5;
+}
+
+.about-card {
+    height: 600px;
+    width: 80%;
+    background-color: lightgray;
+    /* display: flex; */
 }
